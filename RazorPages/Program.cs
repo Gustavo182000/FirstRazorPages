@@ -1,0 +1,25 @@
+using Microsoft.EntityFrameworkCore;
+using RazorPages.Data;
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<RazorPagesContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesContext' not found.")));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+}
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
