@@ -12,8 +12,8 @@ using RazorPages.Data;
 namespace RazorPages.Migrations
 {
     [DbContext(typeof(RazorPagesContext))]
-    [Migration("20230905233634_scriptInicial2")]
-    partial class scriptInicial2
+    [Migration("20230911141426_migracaoTiAlteradoDisplayFormatPreco")]
+    partial class migracaoTiAlteradoDisplayFormatPreco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

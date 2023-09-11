@@ -10,6 +10,9 @@ namespace RazorPages.Models
         [DataType(DataType.Date)]
         public DateTime DataLancamento { get; set; }
         public string Genero { get; set; } = "";
+        [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = true)]
+
+        [Required(ErrorMessage ="O preço é obrigatório")]
         public decimal Preco { get; set; }
     }
 }
