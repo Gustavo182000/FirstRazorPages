@@ -12,8 +12,8 @@ using RazorPages.Data;
 namespace RazorPages.Migrations
 {
     [DbContext(typeof(RazorPagesContext))]
-    [Migration("20230911141426_migracaoTiAlteradoDisplayFormatPreco")]
-    partial class migracaoTiAlteradoDisplayFormatPreco
+    [Migration("20230911235729_Adicionado campo relevancia")]
+    partial class Adicionadocamporelevancia
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,9 @@ namespace RazorPages.Migrations
 
                     b.Property<decimal>("Preco")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Relevancia")
+                        .HasColumnType("int");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

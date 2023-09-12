@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<RazorPagesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesContext' not found.")));
+builder.Services.AddControllersWithViews(options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
 
 var app = builder.Build();
 
@@ -26,5 +27,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+
 
 app.Run();

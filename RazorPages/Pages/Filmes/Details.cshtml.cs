@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPages.Data;
 using RazorPages.Models;
 
 namespace RazorPages.Pages.Filmes
@@ -19,7 +14,7 @@ namespace RazorPages.Pages.Filmes
             _context = context;
         }
 
-      public Filme Filme { get; set; } = default!; 
+        public Filme Filme { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -33,7 +28,7 @@ namespace RazorPages.Pages.Filmes
             {
                 return NotFound();
             }
-            else 
+            else
             {
                 Filme = filme;
             }

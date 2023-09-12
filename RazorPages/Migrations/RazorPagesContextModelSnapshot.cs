@@ -40,6 +40,9 @@ namespace RazorPages.Migrations
                     b.Property<decimal>("Preco")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("Relevancia")
+                        .HasColumnType("int");
+
                     b.Property<string>("Titulo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

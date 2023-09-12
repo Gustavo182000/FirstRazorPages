@@ -40,5 +40,6 @@ namespace RazorPages.Pages.Filmes
                 Generos = new SelectList(await _context.Filme.Select(e => e.Genero).Distinct().ToListAsync());
             }
         }
+
     }
 }

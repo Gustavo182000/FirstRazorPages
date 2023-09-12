@@ -34,6 +34,11 @@
                 <span asp-validation-for="Filme.Preco" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Filme.Relevancia" class="control-label"></label>
+                <input type="number" asp-for="Filme.Relevancia" class="form-control" />
+                <span asp-validation-for="Filme.Relevancia" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

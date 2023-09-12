@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RazorPages.Migrations
 {
     /// <inheritdoc />
-    public partial class migracaoTi1 : Migration
+    public partial class Adicionadocamporelevancia : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,8 @@ namespace RazorPages.Migrations
                     Titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DataLancamento = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Relevancia = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using RazorPages.Data;
 using RazorPages.Models;
 
 namespace RazorPages.Pages.Filmes
@@ -30,7 +24,7 @@ namespace RazorPages.Pages.Filmes
                 return NotFound();
             }
 
-            var filme =  await _context.Filme.FirstOrDefaultAsync(m => m.Id == id);
+            var filme = await _context.Filme.FirstOrDefaultAsync(m => m.Id == id);
             if (filme == null)
             {
                 return NotFound();
@@ -71,7 +65,7 @@ namespace RazorPages.Pages.Filmes
 
         private bool FilmeExists(int id)
         {
-          return (_context.Filme?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Filme?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "koyerXdHhU/v/NCgUv4vX5p5oLkAjU26ARppPmdHz5yGvbnQkJkBEedH80Lugy/Gbbjk5VYGSF8gHol0y1e00A==",
+  "dgSpecHash": "S7L8WCgCROESwv1t1aMHAcgHOQpt7b8A1M7OF98/2vQ+ig8JpUJAbAgFqwha5Tq3VJ4Usk3g+vpoHLePdSYjFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\FirstRazorPages\\RazorPages\\RazorPages.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\RazorPages\\RazorPages\\RazorPages.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
